@@ -1,0 +1,19 @@
+# task-chain
+
+this is project is about running tasks one by one.
+
+for eack banch of tasks, you need to create a task runner:
+
+`let chainTaskRunner = new ChainTaskRunner();`
+
+after that, you can push your task to the task runner:
+
+`chainTaskRunner.addTask(chainTask1);`
+
+but in your processer or your task, you need to call
+
+`yourTask.end()`
+
+to end the task, if you donot end the task manually, the task will keep running~!
+
+for more detail, you can refer to example: ChainTaskTester.js
